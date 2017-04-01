@@ -9616,68 +9616,72 @@ var Main = function (_React$Component) {
           userInstance
         ),
         _react2.default.createElement(
-          'ul',
-          null,
+          'div',
+          { className: 'list-info' },
           _react2.default.createElement(
-            'li',
+            'ul',
             null,
             _react2.default.createElement(
-              'h4',
+              'li',
               null,
-              'DESIGN / STRATEGY'
+              _react2.default.createElement(
+                'h4',
+                null,
+                'DESIGN / STRATEGY'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'We know what it takes to create a successful mobile experience. We can help you define and desgin something truly special.'
+              )
             ),
             _react2.default.createElement(
-              'p',
+              'li',
               null,
-              'We know what it takes to create a successful mobile experience. We can help you define and desgin something truly special.'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              'h4',
-              null,
-              'HARDWARE / WEARABLES'
+              _react2.default.createElement(
+                'h4',
+                null,
+                'HARDWARE / WEARABLES'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+              )
             ),
             _react2.default.createElement(
-              'p',
+              'li',
               null,
-              'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              'h4',
-              null,
-              'HARDWARE / WEARABLES'
+              _react2.default.createElement(
+                'h4',
+                null,
+                'HARDWARE / WEARABLES'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+              )
             ),
             _react2.default.createElement(
-              'p',
+              'li',
               null,
-              'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              'h4',
-              null,
-              'HARDWARE / WEARABLES'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+              _react2.default.createElement(
+                'h4',
+                null,
+                'HARDWARE / WEARABLES'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+              )
             )
           )
         ),
         _react2.default.createElement(
           'footer',
-          null,
+          { className: 'footer-content' },
           _react2.default.createElement(
             'div',
             null,
