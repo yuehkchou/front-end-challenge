@@ -9532,7 +9532,8 @@ var Main = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
 
     _this.state = {
-      users: []
+      users: [],
+      data: []
     };
     return _this;
   }
@@ -9548,6 +9549,7 @@ var Main = function (_React$Component) {
 
       _axios2.default.get('/api/posse').then(function (resp) {
         var users = [];
+        _this2.setState({ data: resp.data.response.locations });
         console.log('resp', resp.data.response.locations);
         resp.data.response.locations.forEach(function (location) {
           location.services.forEach(function (service) {
@@ -9567,6 +9569,7 @@ var Main = function (_React$Component) {
         return _react2.default.createElement(
           _reactBootstrap.ListGroupItem,
           null,
+          _react2.default.createElement('img', { className: 'avatar', src: '/assets/avatar.png' }),
           _react2.default.createElement(
             'p',
             { className: 'userName' },
@@ -9594,6 +9597,28 @@ var Main = function (_React$Component) {
           )
         );
       });
+      var mapInstance = this.state.data.map(function (location, ind) {
+        return _react2.default.createElement(
+          _reactBootstrap.Col,
+          { sm: 8, md: 4 },
+          _react2.default.createElement(
+            'p',
+            null,
+            ' ',
+            _react2.default.createElement(
+              'strong',
+              null,
+              ' ',
+              location.locality,
+              ' '
+            ),
+            ' ',
+            location.region,
+            ', ',
+            location.postal_code
+          )
+        );
+      });
       return _react2.default.createElement(
         'div',
         { className: 'main', id: 'main' },
@@ -9617,15 +9642,37 @@ var Main = function (_React$Component) {
           _react2.default.createElement(
             'h3',
             null,
-            'Mobile Design & Development'
+            _react2.default.createElement(
+              'strong',
+              null,
+              'Mobile Design'
+            ),
+            ' & Development'
           ),
           _react2.default.createElement(
             _reactBootstrap.ListGroup,
-            null,
+            { id: 'list-group' },
             userInstance
           )
         ),
-        _react2.default.createElement('div', { className: 'list-info' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'list-info' },
+          _react2.default.createElement(
+            _reactBootstrap.Grid,
+            null,
+            _react2.default.createElement(
+              _reactBootstrap.Row,
+              null,
+              _react2.default.createElement(
+                'h2',
+                { id: 'company-info' },
+                ' Company Location: '
+              ),
+              mapInstance
+            )
+          )
+        ),
         _react2.default.createElement(
           'footer',
           { className: 'footer-content' },
