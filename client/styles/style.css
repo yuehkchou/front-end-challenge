@@ -23,11 +23,15 @@ html, body {
   width: 75%;
   padding: 20px;
   border: solid 10px #000;
+  border-radius: 15px;
 }
 .list-info {
   text-align:center;
-  margin: 25px;
+  background: white;
+  margin-top: 5%;
+  padding: 25px;
   border: solid 5px #000;
+
 }
 .footer-content {
   color: rgb(230, 230, 230);
@@ -35,5 +39,5 @@ html, body {
   padding: 25px;
 }
 .footer-infor {
-  
+
 }

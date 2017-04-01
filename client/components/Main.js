@@ -6,6 +6,7 @@
 
 import React from 'react';
 import { render } from 'react-dom';
+import { ListGroupItem, ListGroup, Grid, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 
 class Main extends React.Component {
@@ -37,12 +38,12 @@ class Main extends React.Component {
     console.log(this.state)
     const userInstance = this.state.users.map((user, i) => {
       return (
-        <div>
-          <p>{user.name}</p>
+        <ListGroupItem>
+          <p className="userName"><strong>{user.name}</strong></p>
           <p>{user.phone}</p>
           <p>{user.weight}</p>
-          <div>favorite color: {user.favorite_color}</div>
-         </div>
+          <p>favorite color: {user.favorite_color}</p>
+         </ListGroupItem>
       )
     })
     return (
@@ -53,27 +54,12 @@ class Main extends React.Component {
         </div>
         <div className="main-info">
           <h3>Mobile Design & Development</h3>
-          {userInstance}
+          <ListGroup>
+            {userInstance}
+          </ListGroup>
         </div>
         <div className="list-info">
-          <ul>
-            <li>
-              <h4>DESIGN / STRATEGY</h4>
-              <p>We know what it takes to create a successful mobile experience. We can help you define and desgin something truly special.</p>
-            </li>
-            <li>
-              <h4>HARDWARE / WEARABLES</h4>
-              <p>We integrate with the latest developments in hardware. iBeacon, VR, wearables...we've got you covered.</p>
-            </li>
-            <li>
-              <h4>HARDWARE / WEARABLES</h4>
-              <p>We integrate with the latest developments in hardware. iBeacon, VR, wearables...we've got you covered.</p>
-            </li>
-            <li>
-              <h4>HARDWARE / WEARABLES</h4>
-              <p>We integrate with the latest developments in hardware. iBeacon, VR, wearables...we've got you covered.</p>
-            </li>
-          </ul>
+          
         </div>
         <footer className="footer-content">
           <div>
