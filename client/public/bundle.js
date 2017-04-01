@@ -9476,6 +9476,16 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
+        _react2.default.createElement(
+          'a',
+          { href: 'index.html' },
+          'main'
+        ),
+        _react2.default.createElement(
+          'a',
+          { href: './components/about.html' },
+          ' about '
+        ),
         _react2.default.createElement(_Main2.default, null)
       );
     }

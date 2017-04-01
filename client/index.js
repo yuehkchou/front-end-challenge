@@ -10,6 +10,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <a href="index.html">main</a>
+        <a href="./components/about.html"> about </a>
         <Main />
       </div>
     )
