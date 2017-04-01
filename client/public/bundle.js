@@ -9478,12 +9478,12 @@ var App = function (_React$Component) {
         null,
         _react2.default.createElement(
           'a',
-          { href: 'index.html' },
+          { href: '/' },
           'main'
         ),
         _react2.default.createElement(
           'a',
-          { href: './components/about.html' },
+          { href: '/about' },
           ' about '
         ),
         _react2.default.createElement(_Main2.default, null)
