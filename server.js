@@ -35,6 +35,10 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'client/index.html'))
 })
 
+// set up about page
+app.get('/about', function(req, res) {
+  res.sendFile(path.join(__dirname, 'client/components/About.html'))
+})
 // make API call at this address to get json file
 app.get('/api/posse', function(req, res) {
   res.send(posseAPI);
