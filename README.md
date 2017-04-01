@@ -5,7 +5,7 @@ react front-end challenge
   This is the front-end challenge for Posse using React framework and NodeJS on server side.
   I use a boilerplate for React, Node and Webpack compiler.
 
-## Time Use
+## Time Use [~2hours]
 
 ### Setting up boilerplate [20-25 min]
   I use boilerplate for basic index.html, index.js, webpack.config.js, server.js for basic setup.
@@ -17,7 +17,10 @@ react front-end challenge
 ### Creating Skeleton code for main.js and setup basic style sheet[25 min]
   While I use bootstrap as part of the design, I also want to use my own css for custom design.
 
-###
+### Use React Bootstrap Components in Main.js, creaet About.html[30 mins]
+  Use React Bootstrap `Grid`, `Row`, `Col`, `ListGroupItem`, `ListGroup` inside of Main.js
+  Created a pure HTML, CSS page for About.html.
+  
 
 ## Requirements
     "axios": "^0.15.3",
