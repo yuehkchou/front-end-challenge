@@ -9529,22 +9529,38 @@ var Main = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
 
-    _this.state = {};
+    _this.state = {
+      users: []
+    };
     return _this;
   }
   // When this component is loaded make the API Get request to server
+  // Break down JSON object to several parts to get users
+  // resp.data.response.locations
 
 
   _createClass(Main, [{
     key: 'componentWillMount',
     value: function componentWillMount() {
+      var _this2 = this;
+
       _axios2.default.get('/api/posse').then(function (resp) {
-        console.log(resp);
+        var users = [];
+        console.log('resp', resp.data.response.locations);
+        resp.data.response.locations.forEach(function (location) {
+          location.services.forEach(function (service) {
+            service.programmers.forEach(function (programmer) {
+              users.push(programmer);
+              _this2.setState({ users: users });
+            });
+          });
+        });
       });
     }
   }, {
     key: 'render',
     value: function render() {
+      console.log(this.state);
       return _react2.default.createElement(
         'div',
         { className: 'main', id: 'main' },
