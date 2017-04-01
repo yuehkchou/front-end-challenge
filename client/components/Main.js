@@ -47,9 +47,38 @@ class Main extends React.Component {
     })
     return (
       <div className="main" id="main">
-        <div>
+        <div className="main-content">
+          <h1> Welcome to the Main Page </h1>
+          <p> You have just stepped into this new page!</p>
+        </div>
+        <div className="main-info">
+          <h3>Mobile Design & Development</h3>
           {userInstance}
         </div>
+        <ul>
+          <li>
+            <h4>DESIGN / STRATEGY</h4>
+            <p>We know what it takes to create a successful mobile experience. We can help you define and desgin something truly special.</p>
+          </li>
+          <li>
+            <h4>HARDWARE / WEARABLES</h4>
+            <p>We integrate with the latest developments in hardware. iBeacon, VR, wearables...we've got you covered.</p>
+          </li>
+          <li>
+            <h4>HARDWARE / WEARABLES</h4>
+            <p>We integrate with the latest developments in hardware. iBeacon, VR, wearables...we've got you covered.</p>
+          </li>
+          <li>
+            <h4>HARDWARE / WEARABLES</h4>
+            <p>We integrate with the latest developments in hardware. iBeacon, VR, wearables...we've got you covered.</p>
+          </li>
+        </ul>
+        <footer>
+          <div>
+            <p> For more information contact me </p>
+            <p> I really enjoy penutbutter toast crunch</p>
+          </div>
+        </footer>
       </div>
     )
   }

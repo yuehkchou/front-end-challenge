@@ -9593,8 +9593,105 @@ var Main = function (_React$Component) {
         { className: 'main', id: 'main' },
         _react2.default.createElement(
           'div',
-          null,
+          { className: 'main-content' },
+          _react2.default.createElement(
+            'h1',
+            null,
+            ' Welcome to the Main Page '
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            ' You have just stepped into this new page!'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'main-info' },
+          _react2.default.createElement(
+            'h3',
+            null,
+            'Mobile Design & Development'
+          ),
           userInstance
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'h4',
+              null,
+              'DESIGN / STRATEGY'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'We know what it takes to create a successful mobile experience. We can help you define and desgin something truly special.'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'h4',
+              null,
+              'HARDWARE / WEARABLES'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'h4',
+              null,
+              'HARDWARE / WEARABLES'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              'h4',
+              null,
+              'HARDWARE / WEARABLES'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'We integrate with the latest developments in hardware. iBeacon, VR, wearables...we\'ve got you covered.'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'footer',
+          null,
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'p',
+              null,
+              ' For more information contact me '
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              ' I really enjoy penutbutter toast crunch'
+            )
+          )
         )
       );
     }
