@@ -9561,10 +9561,41 @@ var Main = function (_React$Component) {
     key: 'render',
     value: function render() {
       console.log(this.state);
+      var userInstance = this.state.users.map(function (user, i) {
+        return _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'p',
+            null,
+            user.name
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            user.phone
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            user.weight
+          ),
+          _react2.default.createElement(
+            'div',
+            null,
+            'favorite color: ',
+            user.favorite_color
+          )
+        );
+      });
       return _react2.default.createElement(
         'div',
         { className: 'main', id: 'main' },
-        'Cool beans man'
+        _react2.default.createElement(
+          'div',
+          null,
+          userInstance
+        )
       );
     }
   }]);

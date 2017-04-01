@@ -35,9 +35,21 @@ class Main extends React.Component {
   }
   render() {
     console.log(this.state)
+    const userInstance = this.state.users.map((user, i) => {
+      return (
+        <div>
+          <p>{user.name}</p>
+          <p>{user.phone}</p>
+          <p>{user.weight}</p>
+          <div>favorite color: {user.favorite_color}</div>
+         </div>
+      )
+    })
     return (
       <div className="main" id="main">
-        Cool beans man
+        <div>
+          {userInstance}
+        </div>
       </div>
     )
   }
