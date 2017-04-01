@@ -5,6 +5,12 @@ react front-end challenge
   This is the front-end challenge for Posse using React framework and NodeJS on server side.
   I use a boilerplate for React, Node and Webpack compiler.
 
+### Instruction 
+Open different terminals in the directory
+`npm i` to install all the node_modules
+`npm start` to run nodemon and start server listening
+`npm run webpack` to compile webpack 
+go to `localhost:5050` to see the project
 ## Time Use [~2hours]
 
 ### Setting up boilerplate [20-25 min]
