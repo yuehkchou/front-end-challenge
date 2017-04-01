@@ -50,5 +50,25 @@ html, body {
   padding: 25px;
 }
 .footer-info {
+}
 
+/*About page*/
+.container {
+  width: 50%;
+  margin:auto;
+}
+.header-content {
+  padding: 15px;
+}
+.header-content p {
+  font-size: 36px;
+  text-align: left;
+  /*color: rgb(240, 240, 240)*/
+}
+
+#header-heading {
+  text-align: center;
+}
+#header-info {
+  font-family: ''
 }
