@@ -65,10 +65,21 @@ html, body {
   text-align: left;
   /*color: rgb(240, 240, 240)*/
 }
-
 #header-heading {
   text-align: center;
 }
 #header-info {
   font-family: ''
+}
+.section-heading {
+  text-align: center;
+}
+.section-info {
+
+}
+.section-list {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  margin: auto;
 }
